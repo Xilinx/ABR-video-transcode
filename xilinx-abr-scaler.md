@@ -33,7 +33,7 @@ In the ABR ladder below, a 1280x720, 852x480, 640x360, and 416x240 output are cr
 
 The scaler takes the 1920x1080 input and scales it down to 1280x720. It then takes the generated 1280x720 output and scales it down to 852x480, which is then scaled down to 640x360, which is finally scaled down to 416x240. The ABR scaler generates all the output resolutions without any host intervention.
 
-##Features
+## Features
 
 *  	Supports up to 12 taps in both horizontal and vertical direction per stage.
 *  	High-quality polyphase scaling with 64 phases, with quality matching the FFmpeg default bicubic setting.
