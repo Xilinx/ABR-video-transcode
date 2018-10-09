@@ -22,7 +22,7 @@
 
 # Installation and Getting Started
 
-The required package files for setting up the ABR video transcoding evaluation and the U200 accelerator card can be found at the link [here](https://www.xilinx.com/products/boards-and-kits/alveo/applications/adaptive-bit-rate-video-transcoding-application.html#gettingStarted). Read the [Getting Started Guide for U200 and U250 Cards](https://www.xilinx.com/support/documentation/boards_and_kits/accelerator-cards/ug1301-getting-started-guide-u200-u250.pdf) for the installation procedure for the card as well as the Xilinx Runtime.
+The required package files for setting up the ABR video transcoding evaluation and the U200 accelerator card can be found at the link [here](https://www.xilinx.com/products/boards-and-kits/alveo/applications/adaptive-bit-rate-video-transcoding-application.html#gettingStarted). Read the [Getting Started Guide for U200 and U250 Cards](https://www.xilinx.com/support/documentation/boards_and_kits/accelerator-cards/ug1301-getting-started-guide-alveo-accelerator-cards.pdf) for the installation procedure for the card as well as the Xilinx Runtime.
 
 After you have successfully installed the Xilinx Runtime and U200 deployment package, and downloaded the ABR video transcoding evaluation package, follow the steps below to install the package on your system.
 
