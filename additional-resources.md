@@ -22,7 +22,7 @@
 
 # Additional resources
 * [Package files for the ABR Video Transcoding Evaluation](https://www.xilinx.com/products/boards-and-kits/alveo/applications/adaptive-bit-rate-video-transcoding-application.html#gettingStarted)
-* [Getting Started Guide for U200 and U250 Cards](https://www.xilinx.com/support/documentation/boards_and_kits/accelerator-cards/ug1301-getting-started-guide-u200-u250.pdf)
+* [Getting Started Guide for U200 and U250 Cards](https://www.xilinx.com/support/documentation/boards_and_kits/accelerator-cards/ug1301-getting-started-guide-alveo-accelerator-cards.pdf)
 * [Xilinx](https://www.xilinx.com/)
 * [NGCodec](https://ngcodec.com/)
 * [VYUSync](https://www.vyusync.com/)
