@@ -157,7 +157,7 @@ out_4_width=424:out_4_height=240[a][b][c][d]" \
 -map '[d]' -frames 2000 -c:v NGC265 -g 60 -idr-period 60 -b:v 800k -r 60 -y out4.hevc
 ```
 
-In the above command line, `-filter_complex "scale_xma...[a][b][c][d]"` is used to scale the decoded frame scales to an image pyramid of 1280x720, 848x480, 640x360, and 424x240 using the Xilinx ABR scaler. Each of the scaled outputs `[a][b][c][d]` can then be referred to individually using the `-map '[a]` command. Each of the outputs is encoded with its own parameters such as bit rate and GOP length to an HEVC elementary bitstream file.
+In the above command line, `-filter_complex "scale_xma...[a][b][c][d]"` is used to scale the decoded frame scales to an image pyramid of 1280x720, 848x480, 640x360, and 424x240 using the Xilinx ABR scaler. Each of the scaled outputs `[a][b][c][d]` can then be referred to individually using the `-map '[a]` command. Each of the outputs is encoded with its own parameters (such as bit rate, GOP length, and so on) to an HEVC elementary bitstream file.
 </details>
 
 <details>
@@ -250,7 +250,7 @@ out_4_width=424:out_4_height=240[b][c][d][e]" \
 -map '[e]' -frames 2000 -f rawvideo -c:v NGCVP9 -g 60 -idr-period 60 -b:v 800k -r 30 -y out5.vp9
 ```
 
-This command is almost identical to the VP9 ABR transcoding command line. You are using `-filter_complex "split[a][temp]"` to split the uncompressed frames into two identical 1920x1080 streams. One the streams goes to to `scale_xma` to be scaled to the image pyramid of 1280x720, 848x480, 640x360, and 424x240 using the Xilinx ABR scaler. Each of the scaled outputs `[b][c][d][e]` and the remaining split output `[a]` can then, using the `-map '[a]'` command, be referred to individually. Each of the outputs is encoded with its own parameters (such as bit rate, GOP length, and so on) to a VP9 elementary bitstream file. This will only work for frame rates up to 30 fps, otherwise the sum of resolutions to encode exceeds the equivalent of 1080p60 which is the maximum supported by the encoder. </details>
+This command is almost identical to the VP9 ABR transcoding command line. You are using `-filter_complex "split[a][temp]"` to split the uncompressed frames into two identical 1920x1080 streams. One of the streams goes to to `scale_xma` to be scaled to the image pyramid of 1280x720, 848x480, 640x360, and 424x240 using the Xilinx ABR scaler. Each of the scaled outputs `[b][c][d][e]` and the remaining split output `[a]` can then, using the `-map '[a]'` command, be referred to individually. Each of the outputs is encoded with its own parameters (such as bit rate, GOP length, and so on) to a VP9 elementary bitstream file. This will only work for frame rates up to 30 fps. Otherwise, the sum of resolutions to encode exceeds the equivalent of 1080p60, which is the maximum supported by the encoder. </details>
 
  <br>
 
